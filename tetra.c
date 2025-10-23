@@ -14,7 +14,7 @@ float K1 = 40;
 
 float quality = 0.01;
 
-float vertices[4][3] = {
+float vertex[4][3] = {
     { 1.0,  1.0,  1.0},  
     { 1.0, -1.0, -1.0},  
     {-1.0,  1.0, -1.0},
@@ -28,7 +28,7 @@ int faces[4][3] = {
     {1, 2, 3}  
 };
 
-char surChars[4] = {'@', '*', '.', '~'};
+char surfaceChars[4] = {'@', '*', '.', '~'};
 
 float x, y, z;
 float ooz;
@@ -97,10 +97,10 @@ int main() {
     
     for (int i = 0; i < 4; i++) {
       triangle(
-        vertices[faces[i][0]],
-        vertices[faces[i][1]],
-        vertices[faces[i][2]],
-        surChars[i],
+        vertex[faces[i][0]],
+        vertex[faces[i][1]],
+        vertex[faces[i][2]],
+        surfaceChars[i],
         scale
       );
     }
