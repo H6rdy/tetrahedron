@@ -1,4 +1,4 @@
-1. install WSL or Ubuntu
-2. go to the file directory
-3. gcc tetra.c -o tetra -lm
-4. ./tetra 
+1. WSL 설치
+2. 파일 디렉토리로 이동
+3. gcc tetra.c -o tetra -lm 입력
+4. ./tetra 입력
